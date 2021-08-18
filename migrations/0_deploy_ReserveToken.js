@@ -9,5 +9,7 @@ module.exports = async (deployer, currentNetwork, [owner]) => {
     owner,
     deployer
   );
-  return deployer.then(async () => deployReserveToken());
+  if (currentNetwork === 'development' || currentNetwork === 'coverage') {
+      return deployer.then(async () => deployReserveToken());
+  }
 };

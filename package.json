@@ -29,6 +29,7 @@
     "deploy-reset-uatTestnet": "cp zos-bck.json zos.json; rm zos.dev-*.json; rm -r build/contracts; truffle migrate --network uatTestnet --reset",
     "deploy-reset-mocTestnet": "cp zos-bck.json zos.json; rm zos.dev-*.json; rm -r build/contracts; truffle migrate --network mocTestnet --reset",
     "deploy-reset-mocMainnet": "cp zos-bck.json zos.json; rm zos.dev-*.json; rm -r build/contracts; truffle migrate --network mocMainnet --reset",
+    "deploy-reset-btcbTestnet": "cp zos-bck.json zos.json; rm zos.dev-*.json; rm -r build/contracts; truffle migrate --network btcbTestnet --reset",
     "pretty-sc": "prettier --write **/*.sol"
   },
   "repository": {

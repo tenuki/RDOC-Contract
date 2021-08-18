@@ -67,6 +67,15 @@ module.exports = {
       gasPrice: 60000000,
       skipDryRun: true,
       confirmations: 1
+    },
+    btcbTestnet: {
+	    host: 'http://localhost:8575',
+      provider: new HDWalletProvider(mnemonic, 'http://localhost:8575'),
+      network_id: '97',
+      gas: 6700000,
+      gasPrice: 18000000000,
+      skipDryRun: true,
+      confirmations: 1
     }
   },
   mocha: {
