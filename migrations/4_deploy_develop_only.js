@@ -20,7 +20,7 @@ module.exports = async (deployer, currentNetwork, [owner]) => {
       owner,
       deployer
     );
-
+/*
     console.log('Deploying Dev only 1');
     await Promise.all([deployOracleMock(), deployGovernorContract(), deployMoCOracleMock()]);
     console.log('Deploying Dev only Proxy Admin');
@@ -29,5 +29,6 @@ module.exports = async (deployer, currentNetwork, [owner]) => {
     await Promise.all([deployStopperContract(), deployUpgradeDelegatorContract()]);
     console.log('Deploying Dev only MoCHelperLibHarness');
     await deployMoCHelperLibHarness();
+    */
   }
 };

@@ -9,5 +9,5 @@ module.exports = async (deployer, currentNetwork, [owner]) => {
     owner,
     deployer
   );
-  return deployer.then(async () => deployReserveToken());
+//  return deployer.then(async () => deployReserveToken());
 };

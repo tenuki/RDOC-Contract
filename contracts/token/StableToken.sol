@@ -5,8 +5,8 @@ import "./OwnerBurnableToken.sol";
 
 contract StableToken is ERC20Detailed, OwnerBurnableToken {
 
-  string private _name = "RIF Dollar on Chain";
-  string private _symbol = "RDOC";
+  string private _name = "Dollar on Chain";
+  string private _symbol = "DOC";
   uint8 private _decimals = 18;
 
   /**
