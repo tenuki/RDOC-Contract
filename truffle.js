@@ -76,13 +76,11 @@ module.exports = {
       skipDryRun: true
     },
     btcbTestnet: {
-     	    host: 'http://10.10.0.190:8575',
-            provider: new HDWalletProvider(mnemonic, 'http://10.10.0.190:8575'),
-            network_id: '97',
-            gas: 6700000,
-            gasPrice: 18000000000,
-            skipDryRun: true
-          }
+      host: 'http://10.10.0.190:8575',
+      provider: new HDWalletProvider( process.env.MNEMONIC, 'http://10.10.0.190:8575'),
+      network_id: '97',
+      gasPrice: '0x430e23400',
+      skipDryRun: true
     }
   },
   mocha: {
